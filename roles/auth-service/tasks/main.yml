@@ -2,7 +2,7 @@
   ansible.builtin.user:
     name: appuser
     system: yes
-    shaell: /bin/false
+    shell: /bin/false
 
 - name: Create /app directory
   ansible.builtin.file:
@@ -44,4 +44,3 @@
     daemon_reload: yes
     enabled: yes
     state: restarted
-
