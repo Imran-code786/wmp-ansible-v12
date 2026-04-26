@@ -1,0 +1,5 @@
+- name: postgres setup
+  hosts: all
+  becomes: yes
+  roles:
+    - postgresql
