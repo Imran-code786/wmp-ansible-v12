@@ -7,3 +7,8 @@
       - '@nginx:1.26'
       - nodejs
     state: present
+
+- name: Update Nginx Config
+  ansible.builtin.copy:
+    src: nginx.conf
+    dest: /etc/nginx/nginx.conf
